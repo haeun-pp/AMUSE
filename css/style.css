@@ -945,7 +945,7 @@ body {
   }
   .popup{
     background: url(../image/m_popup.png) no-repeat center;
-    background-size: cover;
+    background-size: contain;
     height: 200px;
     width: 100%;
   }
