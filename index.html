@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-1.12.4.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    
+    <!-- 풀페이지 cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@2.9.4/dist/jquery.fullpage.min.js" defer></script>
+    <script src="./js/fullpage.js" defer></script>
+
+    <!-- swiper cdn  -->
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <!-- fav  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+    <link rel="manifest" href="./fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>AMUSE</title>
+</head>
+<body>
+    <div id="wrap">
+        <section class="banner">
+            <div class="container">                
+                <!-- 서브메뉴박스 영역 -->
+                <div class="sub-menu-box">
+                    <ul>
+                        <div class="sub-menu-head-t">
+                            <li class="sub-menu-head"><a href="#none">LOGIN</a></li>
+                            <li> | </li>
+                            <li class="sub-menu-head"><a href="#none">JOIN</a></li>
+                        </div>
+                        <li class="sub-menu-head"><a href="#none">MYPAGE</a></li>
+                        <li class="sub-menu-head"><a href="#none">SHOP ALL</a></li>
+                        <li class="sub-menu-body"><a href="#none">BUCKET LIST</a></li>
+                        <li class="sub-menu-body"><a href="#none">BEST</a></li>
+                        <li class="sub-menu-body"><a href="#none">ONLY AMUSE</a></li>
+                        <li class="sub-menu-body"><a href="#none">WELLNESS</a></li>
+                        <li class="sub-menu-body"><a href="#none">FACE</a></li>
+                        <li class="sub-menu-body"><a href="#none">LIP</a></li>
+                        <li class="sub-menu-body"><a href="#none">EYE</a></li>
+                        <li class="sub-menu-body"><a href="#none">SKINCARE</a></li>
+                        <li class="sub-menu-body"><a href="#none">AgoodMUSE</a></li>
+                        <li class="sub-menu-head"><a href="#none">ABOUT</a></li>
+                        <li class="sub-menu-head"><a href="#none">WELLNESS</a></li>
+                        <li class="sub-menu-head"><a href="#none">SHOWROOM</a></li>
+                        <li class="sub-menu-head"><a href="#none">STOCKIST</a></li>
+                        <li class="sub-menu-head"><a href="#none">COMMUNITY</a></li>
+                    </ul>
+                </div>
+
+                <header class="header-area">
+                    <!-- 햄버거버튼 -->
+                    <a href="#none" id="hamburger">
+                        <span></span><span></span><span></span>
+                    </a>
+
+                    <!-- 로고 -->
+                    <div class="header-logo">
+                        <img src="./image/logo.png" alt="">
+                    </div>
+
+                    <!-- 아이콘박스 -->
+                    <div class="icon-box">
+                        <!-- 화살표 -->
+                        <svg class="icon icon-a icon-aa" width="24" height="24" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.9629 52.1839L36.7809 31.3659C38.5383 29.6085 41.3875 29.6085 43.1449 31.3659L63.9629 52.1839" stroke="#292D32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <a class="icon icon-aa" href="#none">KOREA</a>
+                        <!-- 돋보기 -->
+                        <svg class="icon icon-aa" width="24" height="24" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M66.782 66.4336L54.3198 53.9714" stroke="#292D32"stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13.5775 30.724C15.8197 22.3559 22.3559 15.8197 30.724 13.5775C39.092 11.3353 48.0206 13.7277 54.1464 19.8536C60.2723 25.9794 62.6647 34.908 60.4225 43.276C58.1802 51.6441 51.6441 58.1802 43.276 60.4225C34.908 62.6647 25.9794 60.2723 19.8536 54.1464C13.7277 48.0206 11.3353 39.092 13.5775 30.724Z" stroke="#292D32"stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M22.2776 36.9965C22.2779 31.738 25.0834 26.879 29.6375 24.2497C31.9141 22.9353 34.4547 22.2779 36.9955 22.2776" stroke="#292D32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <!-- 사람 -->                    
+                        <svg class="icon" width="24" height="24" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M60 70.0002H20C17.7909 70.0002 16 68.2094 16 66.0002V64.6639C16 58.8513 19.6061 53.6486 25.049 51.6087C34.6889 47.9957 45.3111 47.9957 54.951 51.6087C60.3939 53.6486 64 58.8513 64 64.6639V66.0002C64 68.2094 62.2091 70.0002 60 70.0002Z" stroke="#292D32" stroke-width="6"stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M33.901 38.8673C37.729 40.8336 42.2702 40.8336 46.0981 38.8673C49.6607 37.0373 52.2131 33.7042 53.0512 29.7878L53.2748 28.7425C54.1318 24.7375 53.2164 20.5576 50.764 17.2773L50.4049 16.797C47.9521 13.5163 44.0958 11.5845 39.9996 11.5845C35.9034 11.5845 32.047 13.5163 29.5943 16.797L29.2352 17.2773C26.7827 20.5576 25.8674 24.7375 26.7243 28.7425L26.948 29.7878C27.786 33.7042 30.3385 37.0373 33.901 38.8673Z" stroke="#292D32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <!-- 카트 -->
+                        <svg class="icon" width="24" height="24" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26 48.9998H64L71 20.9998H19" stroke="#292D32" stroke-width="6"stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M28.9507 60.8029L17 13H9" stroke="#292D32"stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M26.402 61.4989C28.0097 60.5707 29.9905 60.5707 31.5982 61.4989C33.2059 62.4271 34.1963 64.1425 34.1963 65.9989C34.1963 67.8553 33.2059 69.5707 31.5982 70.4989C29.9905 71.4271 28.0097 71.4271 26.402 70.4989C24.7943 69.5707 23.804 67.8553 23.804 65.9989C23.804 64.1425 24.7943 62.4271 26.402 61.4989Z" stroke="#292D32" stroke-width="6"stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M30.4189 61H60.581" stroke="#292D32"stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M59.402 61.4989C61.0097 60.5707 62.9905 60.5707 64.5982 61.4989C66.2059 62.4271 67.1963 64.1425 67.1963 65.9989C67.1963 67.8553 66.2059 69.5707 64.5982 70.4989C62.9905 71.4271 61.0097 71.4271 59.402 70.4989C57.7943 69.5707 56.804 67.8553 56.804 65.9989C56.804 64.1425 57.7943 62.4271 59.402 61.4989Z" stroke="#292D32"stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </header>
+
+                <div class="banner">                
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <!-- <img src="./image/banner-1.jpg" alt=""> -->
+                                </div>
+                                <div class="swiper-slide slide2">
+                                    <!-- <img src="./image/banner-2.jpg" alt=""> -->
+                                </div>
+                                <div class="swiper-slide slide3" >
+                                    <!-- <img src="./image/banner-3.jpg" alt=""> -->
+                                    <div class="box">
+                                        <h1 class="txt txt-m">CEREMIC CUSHION</h1>
+                                        <p class="txt">NEW 세라믹 스킨</p>
+                                        <p class="txt">쿠션 런칭</p>
+                                        <div class="txt-clik"><a href="#none">SHOP NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide4">
+                                    <!-- <img src="./image/banner-4.jpg" alt=""> -->
+                                    <div class="box">
+                                        <h1 class="txt txt-m">CEREMIC SKIN</h1>
+                                        <p class="txt">매끄럽게 커버된</p>
+                                        <p class="txt">가벼운 도자기 피부</p>
+                                        <div class="txt-clik"><a href="#none">SHOP NOW</a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide5">
+                                    <!-- <img src="./image/banner-5.jpg" alt=""> -->
+                                    <div class="box">
+                                        <h1 class="txt txt-m">ALL DAY LASTING</h1>
+                                        <p class="txt">24시간 지속되는</p>
+                                        <p class="txt">롱래스팅 메이크업</p>
+                                        <div class="txt-clik"><a href="#none">SHOP NOW</a></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+
+                    </div>
+        </section>
+        <section class="sec-0">
+            <div class="event">
+                <ul>
+                    <li class="event-l">
+                        <a href="#none">
+                        <img src="./image/event_1.png" alt="">
+                        </a>
+                        <p>이벤트</p></li>
+                    <li class="event-l"><a href="#none">
+                        <img src="./image/event_2.png" alt="">
+                    </a>
+                    <p>신제품</p></li>
+                    <li class="event-l"><a href="#none">
+                        <img src="./image/event_3.png" alt="">
+                    </a>
+                    <p>첫 구매 딜</p></li>
+                    <li class="event-l"><a href="#none">
+                        <img src="./image/event_4.png" alt="">
+                    </a><p>공식몰 단독</p></li>
+                    <li class="event-l"><a href="#none">
+                        <img src="./image/event_5.png" alt="">
+                    </a><p>베스트</p></li>
+                    <li class="event-l"><a href="#none">
+                        <img src="./image/event_6.png" alt="">
+                    </a><p>리퍼브샵</p></li>
+                    <li class="event-l"><a href="#none">
+                        <img src="./image/event_7.png" alt="">
+                    </a><p>회원혜택</p></li>
+                    <li class="event-l"><a href="#none">
+                        <img src="./image/event_8.png" alt="">
+                    </a><p>플친5%</p></li>
+                </ul>
+            </div>
+        </section>
+        <section class="section sec-1">
+            <div class="container">
+                <h1 class="sec-1-txt">NEW</h1>
+                    <div class="new-container">
+                        <div class="swiper secondSwiper">
+                            <ul class="new-item swiper-wrapper">
+                                <li class="new-box box1 swiper-slide">
+                                    <a href="#none"><img src="./image/new-1.jpg" alt=""></a>
+                                    <p class="new-p">베스트 메이크업 세트</p>
+                                    <div class="price">
+                                        <p>48,000원</p>
+                                        <p class="pw">74,000원</p>
+                                    </div>
+                            
+                                </li>
+                                <li class="new-box box2 swiper-slide">
+                                    <a href="#none"><img src="./image/new-2.jpg" alt=""></a>
+                                    <p class="new-p">스프링 메이크업 세트</p>
+                                    <div class="price">
+                                        <p>48,000원</p>
+                                        <p class="pw">75,000원</p>
+                                    </div>
+                                </li>
+                                <li class="new-box box3 swiper-slide">
+                                    <a href="#none"><img src="./image/new-3.jpg" alt=""></a>
+                                    <p class="new-p">핸드크림 + 아즈 키링 세트</p>
+                                    <div class="price">
+                                        <p>38,500원</p>
+                                        <p class="pw">55,000원</p>
+                                    </div>
+                                </li>
+                                <li class="new-box box4 swiper-slide">
+                                    <a href="#none"><img src="./image/new-4.jpg" alt=""></a>
+                                    <p class="new-p">세라믹 스킨 퍼펙터 쿠션 세트</p>
+                                    <div class="price">
+                                        <p>44,000원</p>
+                                        <p class="pw">55,000원</p>
+                                    </div>
+                                </li>
+                                <li class="new-box box5 swiper-slide">
+                                    <a href="#none"><img src="./image/new-5.jpg" alt=""></a>
+                                    <p class="new-p">세라믹 스킨 퍼펙터 쿠션</p>
+                                    <div class="price">
+                                        <p>31,500원</p>
+                                        <p class="pw">35,000원</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>                
+            </div>
+        </section>
+        <section class="section sec-2">
+            <div class="container">
+                <h1 class="sec-2-txt">AMUSE'S PICK</h1>
+                <div class="pick">
+                    <div class="pick-l">
+                        <img src="./image/pick-0.jpg" alt="">
+                    </div>
+                    <div class="pick-r">
+                        <li class="pick-box">
+                            <div class="pick-i">
+                                <img src="./image/pick-1.jpg" alt="">
+                            </div>
+                            <p class="pick-txt-m">젤핏틴트(12종 택1)</p>
+                            <p>18,000원 20,000원</p>
+                        </li>
+                        <li class="pick-box">
+                            <div class="pick-i">
+                                <img src="./image/pick-2.jpg" alt="">
+                            </div>
+                            <p class="pick-txt-m">립풀러(립풀럼퍼)</p>
+                            <p>18,000원 20,000원</p>
+                        </li>
+                        <li class="pick-box">
+                            <div class="pick-i">
+                                <img src="./image/pick-3.jpg" alt="">
+                            </div>
+                            <p class="pick-txt-m">페이 다이아몬드 하이라이터</p>
+                            <p>22,000원</p>
+                        </li>
+                        <li class="pick-box">
+                            <div class="pick-i">
+                                <img src="./image/pick-4.jpg" alt="">
+                            </div>
+                            <p class="pick-txt-m">듀젤리 비건 쿠션</p>
+                            <p>34,000원</p>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup">
+                <div class="popup-box">
+                 <!-- <img src="./image/popup-1.png" alt=""> -->
+                <!-- <img src="./image/popup-2.png" alt=""> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="section sec-3">
+            <div class="container">
+                <div class="vegan">
+                    <h1>I'M BEGAN</h1>
+                    <div class="vegan_icon">
+                        <img src="./image/vegan-icon.jpg" alt="">
+                    </div>
+                    <p>AMUSE는 환경과 지속 가능성을 생각하는<br>
+                        이브 비건 (EVE VEGAN) 인증을 획득한<br>
+                        비건 & 웰니스 뷰티 큐레이션을 선보입니다.
+                    </p>
+
+                    <ul class="veganimg">
+                        <li class="vl vl1"><img src="./image/vegan-1.png" alt=""><a href="#none">SHOP NOW</a></li>
+                        <li class="vl vl2"><img src="./image/vegan-2.png" alt=""><a href="#none">SHOP NOW</a></li>
+                        <li class="vl vl3"><img src="./image/vegan-3.png" alt=""><a href="#none">SHOP NOW</a></li>
+                        <li class="vl vl4"><img src="./image/vegan-4.png" alt=""><a href="#none">SHOP NOW</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section sec-4">
+            <div class="container">
+                <h1>#CERAMIC CUSHION</h1>
+                <ul class="list">
+                    <div class="list_p1">
+                        <li class="list-1 list-w"><img src="./image/ceramic-1.jpg" alt=""></li>
+                        <li class="list-2"><img src="./image/ceramic-2.jpg" alt=""></li>
+                    </div>
+                    <div class="list_p2">
+                        <li class="list-2"><img src="./image/ceramic-3.jpg" alt=""></li>
+                        <li class="list-1"><img src="./image/ceramic-4.jpg" alt=""></li>
+                    </div>
+                    <div class="list_p3">
+                        <li class="list-1"><img src="./image/ceramic-5.jpg" alt=""></li>
+                        <div class="now">
+                            <li class="list-txt">SHOP NOW</li>
+                            <svg width="24" height="24" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 24L32.1592 39.2526C32.6067 39.6504 32.6067 40.3496 32.1592 40.7474L15 56" stroke="#fff" stroke-width="4"stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section class="section sec-5">
+            <div class="container">
+                <div class="sns">
+                    <div class="sns-logo">
+                        <img src="./image/sns-logo.png" alt="">
+                    </div>
+                    <ul class="sns-img">
+                        <li class="sns-i"><img src="./image/sns-1.jpg" alt=""></li>
+                        <li class="sns-i"><img src="./image/sns-2.jpg" alt=""></li>
+                        <li class="sns-i"><img src="./image/sns-3.jpg" alt=""></li>
+                        <li class="sns-i"><img src="./image/sns-4.jpg" alt=""></li>
+                        <li class="sns-i"><img src="./image/sns-5.jpg" alt=""></li>
+                        <li class="sns-i"><img src="./image/sns-6.jpg" alt=""></li>
+                    </ul>
+                    <p><a href="#none">Viwe more on instagram</a></p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="footer">
+            <div class="container">
+                <div class="footer-l">
+                    <div class="f-logo"><img src="./image/logo.png" alt=""></div>
+                    <img class="f-sns none" src="./image/sns-icon.png" alt="">
+                    <small>©AMUSE all right reserved. </small>
+                    <p> 이용약관  |  정보처리방침  |  사업자정보확인 </p>
+                </div>
+                <div class="footer-c">
+                    <h3>CUSTOMER CENTER</h3>
+                    <h3 class="none"> — </h3>
+                    <h3 class="none">1833-7689</h3>
+                    <p class="none">MON.FRI 9AM. 5PM</p>
+                    <p class="none">LUNCH 12PM. 1PM</p>
+                    <p class="none">SAT.SUN.HOLIDAY OFF</p>
+                </div>
+                <div class="footer-r">
+                    <p>AMOUT</p>
+                    <p>MYPAGE</p>
+                    <p>STORE</p>
+                    <p>Q&A</p>
+                    <p>WHOLESALE/PARTNERSHIP</p>
+                    <small>help_amuse@amusemakeup.com</small>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+</body>
+</html>
