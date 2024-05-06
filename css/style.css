@@ -928,7 +928,7 @@ body {
   }
   .sec-2 .pick-r{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 525px;
     background-color: #fff;
@@ -940,8 +940,8 @@ body {
     margin: 0;
   }
   .sec-2 .pick-box .pick-i{
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
   }
   .popup{
     background: url(../image/m_popup.png) no-repeat center;
